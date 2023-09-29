@@ -1,103 +1,236 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:900');
+@import url('https://fonts.googleapis.com/css?family=Lato:900');
 
 * {
     box-sizing: border-box;
 }
 
+h1 {
+    font-size: 56px;
+    font-family: 'Lato', sans-serif;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+h4 {
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+}
+
 body{
     margin: 0;
+    font-family: 'Lato', sans-serif;
 }
 
-.box {
-    color: white;
-    font-size: 100px;
-    font-family: 'Montserrat Alternates', sans-serif;
-    text-align: center;
-    padding: 15px;
+p {
+    font-size: 16px;
 }
 
-/* Apply flex rules here to change layout of boxes */
-.container {
+ul {
+    font-size: 18px;
+    padding-left:50px;
+}
+
+a {
+    color:white;
+    text-decoration-line: none;
+}
+
+
+
+/* Navigation bar styling */
+
+.mainNav {
     display:flex;
-
+    flex-direction:row;
+    justify-content:space-around;
 }
-  
-/* Colours for each box */
-.box1 { background:#eccc68;}
-.box2 { background:#ff6348;}
-.box3 { background:#ff7f50;}
-.box4 { background:#ff4757;}
-.box5 { background:#f1c40f;}
-.box6 { background:#e67e22;}
-.box7 { background:#2ed573;}
-.box8 { background:#1e90ff;}
-.box9 { background:#c56cf0;}
-.box10 { background:#18dcff;}
 
-.header {
-    padding: 60px;
+.logo {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+
+.navBar {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+
+.searchBox {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+
+.menuItem {
+    color: black;
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
     text-align: center;
-    background: #1abc9c;
-    color: white;
-    font-size: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: left;
+    padding: 10px;
 }
+
+.dcLogo {
+    width:40px;
+    height:40px;
+}
+
+
+/* Hero section styling */
+
+.hero {
+    padding: 60px;
+    width: 100%;
+    height: 400px;
+    text-align: left;
+    background-image: url("https://static.dc.com/2023-09/DC.com_20230926_Bat-Manga_Marquee_3x1_.jpg?w=1200");
+    color: white;
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+
+.heroText {
+
+    width: 500px;
+}
+
+.heroButton {
+    width: 300px;
+    border-radius:40px;
+    border-width:1px;
+    border-color:black;
+    background-color:white;
+    color:black;
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Latest News section styling */
+
+.latestNews {
+    color:black;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    padding:50px;
+}
+
+.newsBox {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(233, 233, 165, 0.589);
+    margin:20px;
+}
+
+/* Aquaman Featured Video section styling */
+
+.featuredVideo {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    padding: 50px;
+}
+
+.aquamanVideo {
+    width:300px;
+    padding:10px;
+}
+
+.featuredVideoText {
+    padding:10px;
+}
+
+/* Trailers section styling */
+
+.allTrailers {
+    color:black;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+
+/* Read Comics For Free section styling */
+
+.readForFree {
+    color:black;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+
+/* Get to Know Characters section styling */
+
+.getToKnow {
+    color:black;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+
+/* News From The Multiverse section styling */
+
+.multiverseNews {
+    color:black;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+
+
+/* Join DC section styling */
+
+.joinDC {
+    background-image: linear-gradient(to right, #2A0542, #5816BD);
+    color:white;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:flex-end;
+}
+
+.joinDCText {
+    padding:50px;
+}
+
+.joinDCImage .img {
+    width="300px";
+}
+
+.signUpButton {
+    width: 200px;
+    border-style:solid;
+    border-radius:40px;
+    border-width:1px;
+    border-color:white;
+    color:white;
+    font-size: 10px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Footer section styling */
 
 .footer {
     padding: 20px;
     text-align: center;
-    background: #1f2322;
+    background: black;
     color: white;
-    font-size: 12px;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
  }
-
- p {
-    font-size: 18px;
- }
-
- ul {
-    font-size: 18px;
-    padding-left:50px;
- }
-
-nav {
-    text-align: center;
-    font-size: 22px;
-    padding-top: 20px;
-    padding-bottom: 20px;
- }
-
-.mainintro {
-    text-align: left;
-    font-size: 18px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-right: 40px;
-    padding-left: 20px;
-}
-
-{
-        box-sizing: border-box;
-}
-
-
-    /* Set additional styling options for the columns */
-.column {
-    float: left;
-}
-
-    /* Set width length for the left and right columns */
-.left {
-    width: 70%;
-}
-    
-.right {
-    width: 30%;
-    background: #1abc9c;  
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
