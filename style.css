@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:900');
 
+@import url('https://fonts.googleapis.com/css?family=Oswald:900');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700');
+
 * {
     box-sizing: border-box;
 }
@@ -10,7 +14,7 @@ h1 {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 25px;
     font-family: 'Lato', sans-serif;
 }
 
@@ -24,9 +28,17 @@ h4 {
     font-family: 'Lato', sans-serif;
 }
 
-body{
+body,html{
     margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
     font-family: 'Lato', sans-serif;
+}
+
+body #navigation {
+    position: sticky;
+    top: 0;
 }
 
 p {
@@ -47,28 +59,38 @@ a {
 
 /* Navigation bar styling */
 
+#navigation {
+    padding: 10px 65px 10px 65px;
+    background-color: white;
+}
+
 .mainNav {
     display:flex;
     flex-direction:row;
-    justify-content:space-around;
+    justify-content:flex-left;
 }
 
-.logo {
-    display:flex;
-    flex-direction:row;
-    justify-content:space-around;
+.dcLogo {
+    width:40px;
+    height:40px;
+}
+
+.logo img {
+    width:100%;
 }
 
 .navBar {
     display:flex;
     flex-direction:row;
     justify-content:space-around;
+    padding: 12px 0px 0px 60px;
 }
 
 .searchBox {
     display:flex;
     flex-direction:row;
-    justify-content:space-around;
+    justify-content:flex-end;
+    padding: 12px 0px 0px 160px;
 }
 
 .menuItem {
@@ -76,13 +98,12 @@ a {
     font-size: 12px;
     font-family: 'Lato', sans-serif;
     text-align: center;
-    justify-content: left;
-    padding: 10px;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px;
 }
 
-.dcLogo {
-    width:40px;
-    height:40px;
+.menuItem img {
+    width:20px;
 }
 
 
@@ -93,102 +114,320 @@ a {
     width: 100%;
     height: 400px;
     text-align: left;
-    background-image: url("https://static.dc.com/2023-09/DC.com_20230926_Bat-Manga_Marquee_3x1_.jpg?w=1200");
+    background-image: url("https://static.dc.com/2023-09/DC.com_20230928_HL_IntlBMAdv_Marquee_3x1_.jpg?w=1200");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     font-size: 13px;
     font-family: 'Lato', sans-serif;
     display:flex;
     flex-direction:column;
-    justify-content:space-around;
+    justify-content:flex-end;
 }
 
 .heroText {
-
     width: 500px;
 }
 
 .heroButton {
-    width: 300px;
+    width: 235px;
+    border-style: solid;
     border-radius:40px;
     border-width:1px;
     border-color:black;
     background-color:white;
     color:black;
-    font-size: 13px;
-    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    font-family: 'Oswald', sans-serif;
     text-align: center;
-    justify-content: center;
+    padding:0px 30px 0px 30px;
 }
 
 /* Latest News section styling */
+
+#latestNews {
+    padding:30px 75px 30px 75px;
+}
 
 .latestNews {
     color:black;
     display:flex;
     flex-direction:row;
-    justify-content:space-around;
-    padding:50px;
+    justify-content:space-around; 
 }
 
 .newsBox {
     border-style: solid;
     border-width: 1px;
     border-color: rgba(233, 233, 165, 0.589);
-    margin:20px;
+    box-shadow: 0px 6px 10px 0 rgba(0,0,0,0.1);
+    margin:10px;
+    padding: 0px 0px 20px 0px;
+}
+
+.newsBox img {
+    width:260px;
+}
+
+.newsBox p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.newsBox h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+
+.newsBox h4 {
+    font-weight: lighter;
+    color: grey;
+    text-align:center;
+    font-size: 12px;
+}
+
+.newsBoxButton {
+    width: 220px;
+    border-style: solid;
+    border-radius:40px;
+    border-width:1px;
+    border-color:black;
+    background-color:white;
+    color:black;
+    font-size: 10px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding:0px 30px 0px 30px;
+    margin: auto;
 }
 
 /* Aquaman Featured Video section styling */
 
+#featuredVideo {
+    margin: 10px 65px 10px 65px;
+}
+
 .featuredVideo {
     display:flex;
     flex-direction:row;
-    justify-content:space-between;
-    padding: 50px;
+    justify-content:space-around;
 }
 
 .aquamanVideo {
-    width:300px;
+    width:640px;
     padding:10px;
 }
 
 .featuredVideoText {
-    padding:10px;
+    padding:30px;
 }
 
 /* Trailers section styling */
+
+#allTrailers {
+    margin: 10px 65px 10px 65px;
+}
 
 .allTrailers {
     color:black;
     display:flex;
     flex-direction:row;
     justify-content:space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.trailerBox {
+    width:240px;
+    height: 250px;
+    box-shadow: 0px 6px 10px 0 rgba(0,0,0,0.1);
+    margin: 0px 0px 0px 0px;
+}
+
+.trailerBox img {
+    width: 240px;
+}
+
+.trailerBox h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align:center;
+    font-size: 16px;
+}
+
+.trailerBox h4 {
+    font-weight: lighter;
+    color: grey;
+    text-align:center;
+    font-size: 12px;
 }
 
 /* Read Comics For Free section styling */
+
+#readForFree {
+    margin: 10px 65px 30px 65px;
+}
+
+.readForFreeHeader {
+    color:black;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    margin: 50px 0px 50px 0px;
+}
 
 .readForFree {
     color:black;
     display:flex;
     flex-direction:row;
     justify-content:space-around;
+    margin-left: 30px;
+    margin-right: 20px;
 }
+
+.comicBox {
+    width: 240px;
+}
+
+.comicBox img {
+    width: 187px;
+    height: 284px;
+}
+
+.comicBox h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align:center;
+    font-size: 16px;
+}
+
+.readForFreeButton {
+    width: 235px;
+    border-style: solid;
+    border-radius:40px;
+    border-width:1px;
+    border-color:black;
+    background-color:white;
+    color:black;
+    font-size: 10px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding:0px 30px 0px 30px;
+}
+
+
+
 
 /* Get to Know Characters section styling */
 
+#getToKnow {
+    margin: 10px 0px 10px 0px;
+}
+
 .getToKnow {
+    padding: 60px 60px 60px 100px;
+    width: 100%;
+    height: 396px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    background-image: url("/images/flash_hub_carCar_batman_3x1a.jpg");
+    color: white;
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+}
+
+.getToKnowText {
+    width: 500px;
+    text-align: center;
+}
+
+.getToKnowText p {
+line-height: 2.6;
+}
+
+.getToKnowText h3 {
+    font-size: 14px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.636)
+}
+
+.getToKnowButton {
+    width: 235px;
+    border-style: solid;
+    border-radius:40px;
+    border-width:1px;
+    border-color:white;
+    background-color none;
+    color:white;
+    font-size: 10px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding:0px 30px 0px 30px;
+}
+
+/* News From The Multiverse section styling */
+
+#multiverseNews {
+    margin: 10px 65px 30px 65px;
+}
+
+.multiverseNewsHeader {
     color:black;
     display:flex;
     flex-direction:row;
     justify-content:space-around;
+    margin: 50px 0px 50px 0px;
 }
-
-/* News From The Multiverse section styling */
 
 .multiverseNews {
     color:black;
     display:flex;
     flex-direction:row;
     justify-content:space-around;
+    margin: 50px 0px 50px 0px;
+}
+
+.multiverseBox {
+    width: 328px;
+    height: 370px;
+    margin: 0px 0px 0px 0px;
+}
+
+.multiverseBox img {
+    width: 328px;
+    height: 247px;
+}
+
+.multiverseBox h3 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:center;
+    font-size: 16px;
+}
+
+.multiverseBox h4 {
+    font-weight: lighter;
+    color: grey;
+    text-align:center;
+    font-size: 12px;
+}
+
+.moreNewsButton {
+    width: 235px;
+    border-style: solid;
+    border-radius:40px;
+    border-width:1px;
+    border-color:black;
+    background-color:white;
+    color:black;
+    font-size: 10px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding:0px 30px 0px 30px;
 }
 
 
@@ -207,8 +446,8 @@ a {
     padding:50px;
 }
 
-.joinDCImage .img {
-    width="300px";
+.joinDCImage img {
+    width:500px;
 }
 
 .signUpButton {
