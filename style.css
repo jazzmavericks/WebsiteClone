@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:900');
+@import url('https://fonts.googleapis.com/css?family=Lato:700');
 
 @import url('https://fonts.googleapis.com/css?family=Oswald:900');
 
@@ -60,7 +60,7 @@ a {
 /* Navigation bar styling */
 
 #navigation {
-    padding: 10px 65px 10px 65px;
+    padding: 10px 65px 5px 75px;
     background-color: white;
 }
 
@@ -112,9 +112,9 @@ a {
 .hero {
     padding: 60px;
     width: 100%;
-    height: 400px;
+    height: 430px;
     text-align: left;
-    background-image: url("https://static.dc.com/2023-09/DC.com_20230928_HL_IntlBMAdv_Marquee_3x1_.jpg?w=1200");
+    background-image: url("/images/Batman Marquee.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -127,27 +127,31 @@ a {
 }
 
 .heroText {
-    width: 500px;
+    width: 460px;
+    margin: 10px 0px 0px 25px;
 }
 
-.heroButton {
-    width: 235px;
+.button {
+    background-color: white;
+    border: 1px;
     border-style: solid;
-    border-radius:40px;
-    border-width:1px;
-    border-color:black;
-    background-color:white;
-    color:black;
-    font-size: 10px;
+    border-color: black;
+    border-radius: 20px;
+    color: black;
+    padding: 5px 40px;
     font-family: 'Oswald', sans-serif;
     text-align: center;
-    padding:0px 30px 0px 30px;
-}
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 10px 0px 0px 28px;
+  }
 
 /* Latest News section styling */
 
 #latestNews {
-    padding:30px 75px 30px 75px;
+    padding:40px 75px 30px 75px;
 }
 
 .latestNews {
@@ -164,6 +168,7 @@ a {
     box-shadow: 0px 6px 10px 0 rgba(0,0,0,0.1);
     margin:10px;
     padding: 0px 0px 20px 0px;
+    text-align: center;
 }
 
 .newsBox img {
@@ -179,6 +184,7 @@ a {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 22px;
     text-align: center;
+    margin: 0px 10px;
 }
 
 .newsBox h4 {
@@ -188,20 +194,28 @@ a {
     font-size: 12px;
 }
 
-.newsBoxButton {
-    width: 220px;
+.button2 {
+    background-color: white;
+    border: 1px;
     border-style: solid;
-    border-radius:40px;
-    border-width:1px;
-    border-color:black;
-    background-color:white;
-    color:black;
-    font-size: 10px;
+    border-color: black;
+    border-radius: 20px;
+    color: black;
+    padding: 10px 20px;
     font-family: 'Oswald', sans-serif;
     text-align: center;
-    padding:0px 30px 0px 30px;
-    margin: auto;
-}
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 30px 0px 15px 0px;
+  }
+
+  .buttonBox {
+
+    margin-top: 10%;
+  }
+
 
 /* Aquaman Featured Video section styling */
 
@@ -273,9 +287,40 @@ a {
     color:black;
     display:flex;
     flex-direction:row;
-    justify-content:space-around;
-    margin: 50px 0px 50px 0px;
+    justify-content:space-between;
 }
+
+.readForFreeTitle {
+    color:black;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin: 40px 0px 50px 0px;
+}
+
+.readForFreeButtons {
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    padding: 12px 0px 0px 160px;
+}
+
+.button3 {
+    background-color: white;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+    color: black;
+    padding: 10px 40px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 30px 20px 15px 20px;
+  }
 
 .readForFree {
     color:black;
@@ -298,24 +343,8 @@ a {
 .comicBox h3 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align:center;
-    font-size: 16px;
+    font-size: 22px;
 }
-
-.readForFreeButton {
-    width: 235px;
-    border-style: solid;
-    border-radius:40px;
-    border-width:1px;
-    border-color:black;
-    background-color:white;
-    color:black;
-    font-size: 10px;
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    padding:0px 30px 0px 30px;
-}
-
-
 
 
 /* Get to Know Characters section styling */
@@ -380,16 +409,45 @@ line-height: 2.6;
     color:black;
     display:flex;
     flex-direction:row;
-    justify-content:space-around;
-    margin: 50px 0px 50px 0px;
+    justify-content:space-between;
 }
+
+.multiverseTitle {
+    color:black;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+
+.multiverseButton {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.button4 {
+    background-color: white;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 30px;
+    color: black;
+    padding: 10px 50px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 20px 20px 15px 20px;
+  }
 
 .multiverseNews {
     color:black;
     display:flex;
     flex-direction:row;
     justify-content:space-around;
-    margin: 50px 0px 50px 0px;
+    margin: 20px 0px 50px 0px;
 }
 
 .multiverseBox {
@@ -406,7 +464,7 @@ line-height: 2.6;
 .multiverseBox h3 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align:center;
-    font-size: 16px;
+    font-size: 24px;
 }
 
 .multiverseBox h4 {
@@ -414,20 +472,6 @@ line-height: 2.6;
     color: grey;
     text-align:center;
     font-size: 12px;
-}
-
-.moreNewsButton {
-    width: 235px;
-    border-style: solid;
-    border-radius:40px;
-    border-width:1px;
-    border-color:black;
-    background-color:white;
-    color:black;
-    font-size: 10px;
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    padding:0px 30px 0px 30px;
 }
 
 
@@ -450,18 +494,21 @@ line-height: 2.6;
     width:500px;
 }
 
-.signUpButton {
-    width: 200px;
-    border-style:solid;
-    border-radius:40px;
-    border-width:1px;
-    border-color:white;
-    color:white;
-    font-size: 10px;
-    font-family: 'Lato', sans-serif;
+.button5 {
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 30px;
+    color: white;
+    padding: 13px 30px;
+    font-family: 'Oswald', sans-serif;
     text-align: center;
-    justify-content: center;
-}
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 5px 0px 15px 0px;
+  }
 
 /* Footer section styling */
 
